@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto-App</title>
+  </head>
+  <body>
+    <div class="preloader"></div>
+    <div id="app">
+      <header class="site-header text-center py-3">
+        <nav>
+          <span class="text-white font-bold text-xl">Crypto Price</span>
+        </nav>
+      </header>
+      <section class="flex justify-center lg:h-96 9t-4">
+        <div class="card-container flex justify-center grid lg:grid-cols-3 w-9/12 place-items-center">
+          <div class="currency-card w-48 h-40 rounded py-4 px-4 text-white mb-4 shadow-lg transform hover:scale-105 transition duration-300">
+            <span class="currency-title text-white font-bold" id="bitcoin-card">Bitcoin</span>
+            <sup class=" currency-symbol text-white">BTC</sup>
+            <div class="currency-rank float-right border-2 border-white rounded-full text-white h-6 w-6 flex justify-center items-center">1</div>
+            <div class="currency-price py-12 text-white font-bold text-xl">250.00</div>
+          </div>
+        </div>
+      </section>
+      <footer class="site-footer text-white text-center lg:fixed bottom-0 w-full py-2">
+        <span>&copy Crypto-Listing</span>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
